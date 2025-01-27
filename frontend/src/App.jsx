@@ -4,6 +4,7 @@ import Layout from './comonents/Layout'
 import Home from './comonents/Home'
 import Insert from './comonents/Insert'
 import Display from './comonents/Display'
+import Search from './comonents/Search'
 function App() {
   return (
     <>
@@ -13,6 +14,10 @@ function App() {
        <Route path='home' element = {<Home/>}/>
        <Route path='insert' element = {<Insert/>}/>
       <Route path='display' element = {<Display/>}/>
+      <Route path='search' element = {<Search/>}/>
+      
+
+
       </Route>
     </Routes>
     </>

@@ -9,8 +9,18 @@ const saveData =async (req , res)=>{
     })
     res.send(data)
 }
+const displayData = async(req , res)=>{
+    const data = await stuModel.find();
+    res.send(data)
+}
 
-
+const searchData = async(req , res)=>{
+    const {rollno} = req.body
+      let data = await stuModel.find({rollno:rollno})
+      res.send(data)
+}
 module.exports = {
-    saveData
+    saveData,
+    displayData,
+    searchData
 }
